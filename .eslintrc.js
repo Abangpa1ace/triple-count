@@ -11,4 +11,9 @@ module.exports = {
     '@titicaca/eslint-config-triple/frontend',
   ],
   overrides,
+  settings: {
+    'import/resolver': {
+      typescript: './tsconfig.json',
+    },
+  },
 }
