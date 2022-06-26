@@ -8,15 +8,18 @@
 - 주제 : Triple 홈페이지 한 섹션을 구현합니다. (이미지/텍스트 마크업, Fade-Up 애니메이션, Count-Up 애니메이션)
 - 기술스택 : HTML/CSS, Javascript(ES6), Typescript, React, React-Router-Dom, Styled-Components, Vite
 - 실행방법
-  <br/>
+  ```
+  yarn dev  // development build
+  yarn build  // production build
+  ```
+  
+<br/>
 
 ## 구현상세(사용기술 및 선택이유)
 
 ### 컴포넌트 및 상태
 
-#### - 컴포넌ㅌ
-
-한 섹션을 구현하나, 실제 개발이라 생각하고 `<HomePage>` 페이지 컴포넌트 안에
+- 한 섹션을 구현하나, 실제 개발이라 생각하고 `<HomePage>` 페이지 컴포넌트 안에
 <br/><br/>
 
 ### 퍼블리싱
