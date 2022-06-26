@@ -27,21 +27,22 @@ const ScAchieveStores = styled.ul`
   }
 `
 
+const stores: StoreType[] = [
+  {
+    id: 'google',
+    text1: '2018 구글 플레이스토어',
+    text2: '올해의 앱 최우수상 수상',
+    image: './assets/image/play-store2x.png',
+  },
+  {
+    id: 'apple',
+    text1: '2018 애플 플레이스토어',
+    text2: '오늘의 여행앱 선정',
+    image: './assets/image/badge-apple4x.png',
+  },
+]
+
 const AchieveStores = () => {
-  const stores: StoreType[] = [
-    {
-      id: 'google',
-      text1: '2018 구글 플레이스토어',
-      text2: '올해의 앱 최우수상 수상',
-      image: './assets/image/play-store2x.png',
-    },
-    {
-      id: 'apple',
-      text1: '2018 애플 플레이스토어',
-      text2: '오늘의 여행앱 선정',
-      image: './assets/image/badge-apple4x.png',
-    },
-  ]
   return (
     <ScAchieveStores>
       {stores.map(({ id, text1, text2, image }) => {

@@ -1,12 +1,12 @@
 import styled from 'styled-components'
 
-import CountUp from '@/components/common/CountUp'
+import CountUp from '@/views/components/common/CountUp'
 
 interface PhraseType {
   id: string
   unit: string
   text: string
-  max: number
+  count: number
 }
 
 const ScAchievePhrases = styled.ul`
@@ -24,23 +24,23 @@ const ScAchievePhrases = styled.ul`
   }
 `
 
-const AchievePhrases = () => {
-  const phrases: PhraseType[] = [
-    { id: 'traveler', unit: '명', text: '여행자', max: 700 },
-    { id: 'review', unit: '개', text: '여행 리뷰', max: 100 },
-    { id: 'schedule', unit: '개', text: '여행 일정', max: 470 },
-  ]
+const phrases: PhraseType[] = [
+  { id: 'traveler', unit: '명', text: '여행자', count: 700 },
+  { id: 'review', unit: '개', text: '여행 리뷰', count: 100 },
+  { id: 'schedule', unit: '개', text: '여행 일정', count: 470 },
+]
 
+const AchievePhrases = () => {
   return (
     <ScAchievePhrases>
-      {phrases.map(({ id, unit, text, max }) => {
+      {phrases.map(({ id, unit, text, count }) => {
         return (
           <li key={id}>
             <b>
-              <CountUp max={max} />
+              <CountUp end={count} />
               {unit}
             </b>
-            <span> {text}</span>
+            <span>의 {text}</span>
           </li>
         )
       })}

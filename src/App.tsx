@@ -1,10 +1,9 @@
-import './App.css'
-import SectionAchieve from '@/components/home/SectionAchieve'
+import Router from '@/router'
 
 function App() {
   return (
     <div className="App">
-      <SectionAchieve />
+      <Router />
     </div>
   )
 }
