@@ -1,4 +1,4 @@
-# Triple CodeTest : Count-Up 애니메이션 구현
+# Triple CodeTest
 
 <br/>
 
