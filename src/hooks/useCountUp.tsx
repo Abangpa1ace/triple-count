@@ -23,16 +23,16 @@ const useCountUp = ({
   const frames = Math.round(fps * duration)
 
   useEffect(() => {
-    let nowCount = start
+    let frameCount = start
     const interval = setInterval(() => {
-      const rate = easeOutExpo(++nowCount / frames)
+      const rate = easeOutExpo(++frameCount / frames)
       setCount(Math.round(end * rate))
       if (rate === 1) {
         clearInterval(interval)
       }
 
       return () => clearInterval(interval)
-    })
+    }, fps)
   }, [end])
 
   return { count }
